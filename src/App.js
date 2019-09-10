@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+// componentes que conforman la aplicacion
+import Navigation from './components/navigation/Navigation';
+import Header from './components/header/Header';
+import About from './components/about/About';
+
+
+/**
+ * App
+ * 
+ * Funcion principal que encapsula los componentes
+ */
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <Header />
+      <About />
     </div>
   );
 }
